@@ -18,9 +18,9 @@ class Deferrer(object):
             f(*args, **kwargs)
 
     def debug(self, target, name, *args, **kwargs):
-            l = [str(i) for i in args] + ["{}={}".format(k, v) for k, v in kwargs.iteritems()]
-            s = "{}.{}({})".format(target.__name__, name, ", ".join(l))
-            return s
+        l = [str(i) for i in args] + ["{}={}".format(k, v) for k, v in kwargs.iteritems()]
+        s = "{}.{}({})".format(target.__name__, name, ", ".join(l))
+        return s
 
 
 
